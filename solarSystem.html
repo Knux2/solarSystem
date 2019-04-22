@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel='stylesheet' type='text/css' href='solarSystem.css'>
+    <title>Solar System</title>
+</head>
+<body>
+    <div class="container">
+        <svg width="1400" height="1300">
+            <circle cx="700" cy="650" r="570" stroke="white" stroke-width="1" />
+            <circle cx="700" cy="650" r="500" stroke="white" stroke-width="1" />
+            <circle cx="700" cy="650" r="390" stroke="white" stroke-width="1" />
+            <circle cx="700" cy="650" r="275" stroke="white" stroke-width="1" />
+            <circle cx="700" cy="650" r="180" stroke="white" stroke-width="1" />
+            <circle cx="700" cy="650" r="135" stroke="white" stroke-width="1" />
+            <circle cx="700" cy="650" r="100" stroke="white" stroke-width="1" />
+            <circle cx="700" cy="650" r="62" stroke="white" stroke-width="1" />
+
+            <circle id="stars1" cx="100" cy="100" r="2" fill="white" />
+            <circle id="stars1" cx="400" cy="350" r="2" fill="white" />
+            <circle id="stars1" cx="900" cy="600" r="2" fill="white" />
+            <circle id="stars2" cx="400" cy="1000" r="2" fill="white" />
+            <circle id="stars1" cx="540" cy="500" r="2" fill="white" />
+            <circle id="stars1" cx="720" cy="760" r="2" fill="white" />
+            <circle id="stars2" cx="1000" cy="1000" r="2" fill="white" />
+            <circle id="stars1" cx="200" cy="1150" r="2" fill="white" />
+            <circle id="stars2" cx="900" cy="375" r="2" fill="white" />
+            <circle id="stars2" cx="800" cy="130" r="2" fill="white" />
+            <circle id="stars2" cx="1300" cy="250" r="2" fill="white" />
+            <circle id="stars1" cx="1200" cy="1250" r="2" fill="white" />
+            <circle id="stars2" cx="400" cy="750" r="2" fill="white" />
+            <circle id="stars2" cx="1150" cy="650" r="2" fill="white" />
+
+            <defs>
+                <radialGradient id="grad1" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+                    <stop offset="0%" style="stop-color:red" />
+                    <stop offset="40%" style="stop-color:orange" />
+                    <stop offset="100%" style="stop-color:yellow" />
+                </radialGradient>
+
+                <radialGradient id="grad2" cx="50%" cy="50%" r="50%" fx="30%" fy="30%">
+                    <stop offset="0%" style="stop-color:red" />
+                    <stop offset="30%" style="stop-color:orange" />
+                </radialGradient>
+            </defs>
+
+            <circle id="sun" cx="700" cy="650" r="50" fill="url('#grad1')" />
+            <circle id="mercury" cx="640" cy="640" r="5" fill="white" />
+            <circle id="venus" cx="760" cy="570" r="8" fill="brown" />
+            <circle id="earth" cx="820" cy="710" r="11" fill="green" />
+            <circle id="mars" cx="600" cy="800" r="10" fill="red" />
+            <circle id="jupiter" cx="430" cy="680" r="35" fill="url('#grad2')" />
+            <circle id="saturn" cx="420" cy="380" r="30" fill="gray" />
+            <circle id="uranus" cx="900" cy="190" r="20" fill="blue" />
+            <circle id="neptune" cx="950" cy="1160" r="25" fill="cyan" />
+        </svg>
+    </div>
+</body>
+</html>
